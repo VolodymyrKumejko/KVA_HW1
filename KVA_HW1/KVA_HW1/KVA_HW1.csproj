@@ -45,12 +45,15 @@
     <Compile Include="BAL\MySearch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\CBatmenCar.cs" />
     <Compile Include="Shared\CCar.cs" />
     <Compile Include="Shared\CPlane.cs" />
     <Compile Include="Shared\CShip.cs" />
+    <Compile Include="Shared\CTerrapin.cs" />
     <Compile Include="Shared\CVehicle.cs" />
     <Compile Include="Shared\IFly.cs" />
     <Compile Include="Shared\IMove.cs" />
+    <Compile Include="Shared\IPassenger.cs" />
     <Compile Include="Shared\ISwim.cs" />
   </ItemGroup>
   <ItemGroup>

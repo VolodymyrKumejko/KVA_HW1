@@ -9,27 +9,47 @@ namespace KVA_HW1.BAL
 {
     class MySearch
     {
-        public static void VehicleYear(CVehicle[] massVeh, int yearUp, int yearDown)
+        public static void VehicleYear(CVehicle[] massVeh, int yearUp, int yearDown, out CVehicle[] cVehicles)
         {
+            cVehicles = new CVehicle[0];
             foreach (var item in massVeh)
             {
                 if (item.YearMake >= yearDown && item.YearMake <= yearUp)
-                {
-                    Console.WriteLine(item.ToString());
+                {                    
+                    Array.Resize(ref cVehicles, cVehicles.Length+1);
+                    cVehicles[cVehicles.Length - 1] = item;
                 }
             }
         }
 
-        public static void VehicleSpeed(CVehicle[] massVeh, int speedUp, int speedDown)
+        public static void VehicleSpeed(CVehicle[] massVeh, int speedUp, int speedDown, out CVehicle[] cVehicles)
         {
+            cVehicles = new CVehicle[0];
             foreach (var item in massVeh)
             {
                 if (item.Speed >= speedDown && item.Speed <= speedUp)
                 {
-                    Console.WriteLine(item.ToString());
+                    Array.Resize(ref cVehicles, cVehicles.Length + 1);
+                    cVehicles[cVehicles.Length - 1] = item;
                 }
             }
         }
+
+        public static void VehicleCost(CVehicle[] massVeh, int costUp, int costDown, out CVehicle[] cVehicles)
+        {
+
+            
+            cVehicles = new CVehicle[0];
+            foreach (var item in massVeh)
+            {
+                if (item.Cost >= costDown && item.Cost <= costUp)
+                {
+                    Array.Resize(ref cVehicles, cVehicles.Length + 1);
+                    cVehicles[cVehicles.Length - 1] = item;
+                }
+            }
+        }
+
 
         public static void VehiclePassengerCapacity(CVehicle[] massVeh, int passengerCapacityUp, int passengerCapacityDown)
         {

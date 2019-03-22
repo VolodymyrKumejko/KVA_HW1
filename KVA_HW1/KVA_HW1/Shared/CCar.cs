@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KVA_HW1.Shared
 {
-    class CCar : CVehicle
+    class CCar : CVehicle, IMove
     {
         public string Color { set; get; }
 

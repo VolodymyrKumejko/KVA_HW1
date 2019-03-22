@@ -25,6 +25,9 @@ namespace KVA_HW1.Shared
             Y = y;
         }
 
+
+       
+
         public override string ToString()
         {
             return "Тр.ср.-" + Name + "; Цена-" + Cost + "; Скорость-" + Speed + "; Год вып.-" + YearMake + "; Коор-ты-" + Y + "," + X;

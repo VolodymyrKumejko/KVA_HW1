@@ -8,5 +8,6 @@ namespace KVA_HW1.Shared
 {
     interface IFly
     {
+        int Height { set; get; }
     }
 }

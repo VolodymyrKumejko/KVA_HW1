@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KVA_HW1.Shared
 {
-    class CPlane : CVehicle
+    class CPlane : CVehicle, IPassenger, IFly
     {
         public int Height { set; get; }
         public int PassengerCapacity { set; get; }

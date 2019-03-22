@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace KVA_HW1.Shared
 {
-    interface IMove
+    interface IPassenger
     {
-        string Color { set; get; }
+        int PassengerCapacity { set; get; }
     }
 }

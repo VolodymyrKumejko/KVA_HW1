@@ -8,5 +8,6 @@ namespace KVA_HW1.Shared
 {
     interface ISwim
     {
+        string HomePort { set; get; }
     }
 }
