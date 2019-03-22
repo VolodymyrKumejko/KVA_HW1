@@ -49,6 +49,9 @@
     <Compile Include="Shared\CPlane.cs" />
     <Compile Include="Shared\CShip.cs" />
     <Compile Include="Shared\CVehicle.cs" />
+    <Compile Include="Shared\IFly.cs" />
+    <Compile Include="Shared\IMove.cs" />
+    <Compile Include="Shared\ISwim.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
